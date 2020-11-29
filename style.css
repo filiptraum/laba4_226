@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 1052px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 0 10px 0 15px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
+
+body {
+  background-color: #031122;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+._btn {
+  min-height: 40px;
+  width: 140px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background-color: orange;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+._btn:hover,
+._btn:focus {
+  box-shadow: 0 0 5px white;
+}
+
+._title {
+  font-size: 48px;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+._row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 15px;
+}
+
+._row input {
+  margin-bottom: 10px;
+}
+
+._subtitle {
+  margin-bottom: 15px;
+  font-variant: small-caps;
+}
+
+._subtitle b {
+  color: red;
+}
+
+._subtitle span {
+  color: green;
+}
+
+._block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+._box {
+  padding: 15px 25px 5px 25px;
+  max-width: 550px;
+  margin-bottom: 45px;
+}
+
+._output {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+}
+
+._helper {
+  color: yellow;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 0;
+  }
+
+  ._row {
+    padding: 15px 5px 0 5px;
+  }
+
+  ._block {
+    flex-direction: column;
+  }
+
+  input,
+  button {
+    width: 100% !important;
+  }
+
+  ._btn {
+    margin-left: 0;
+  }
+
+  ._box {
+    width: 100%;
+  }
+}
+
+.failed {
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}
